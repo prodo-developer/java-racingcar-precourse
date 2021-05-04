@@ -79,7 +79,7 @@ class CarTest {
     }
 
     @Test
-    @DisplayName("Car 객체 2개의 위치를 비교한다.")
+    @DisplayName("Car 위치가 같으면 true 반환")
     void isSamePosition() {
         Car car = new Car("benz1", () -> true);
         Car targetCar = new Car("benz2", () -> false);
@@ -90,7 +90,7 @@ class CarTest {
     }
 
     @Test
-    @DisplayName("Car 객체 2개의 위치를 비교한다.")
+    @DisplayName("Car 위치가 다르면 false 반환")
     void isNoSamePosition() {
         Car car = new Car("benz1", () -> true);
         Car targetCar = new Car("benz2", () -> false);
